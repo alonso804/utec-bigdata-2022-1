@@ -14,9 +14,11 @@ argon2-cffi-bindings==21.2.0
     # via argon2-cffi
 astroid==2.11.3
     # via pylint
+atomicwrites==1.4.0
+    # via pytest
 attrs==21.4.0
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   jsonschema
     #   pytest
 babel==2.9.1
@@ -33,20 +35,29 @@ bleach==5.0.0
     # via nbconvert
 certifi==2021.10.8
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   requests
 cffi==1.15.0
     # via argon2-cffi-bindings
 charset-normalizer==2.0.12
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   requests
 click==8.0.2
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   black
     #   nltk
     #   safety
+colorama==0.4.4
+    # via
+    #   -c requirements\prod.txt
+    #   bandit
+    #   click
+    #   ipython
+    #   pylint
+    #   pytest
+    #   tqdm
 cycler==0.11.0
     # via matplotlib
 debugpy==1.6.0
@@ -61,7 +72,7 @@ dparse==0.5.1
     # via safety
 editdistance==0.6.0
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   -r requirements/dev.in
 entrypoints==0.4
     # via
@@ -77,12 +88,12 @@ gitpython==3.1.27
     # via bandit
 idna==3.3
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   anyio
     #   requests
 importlib-metadata==4.11.3
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   click
     #   jsonschema
     #   jupyterlab-server
@@ -91,7 +102,7 @@ importlib-metadata==4.11.3
     #   stevedore
 importlib-resources==5.7.1
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   jsonschema
 iniconfig==1.1.1
     # via pytest
@@ -111,7 +122,7 @@ jedi==0.18.1
     # via ipython
 jinja2==3.1.1
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   jupyter-server
     #   jupyterlab
     #   jupyterlab-server
@@ -123,7 +134,7 @@ json5==0.9.6
     # via jupyterlab-server
 jsonschema==4.4.0
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   jupyterlab-server
     #   nbformat
 jupyter-client==7.2.2
@@ -158,7 +169,7 @@ lazy-object-proxy==1.7.1
     # via astroid
 markupsafe==2.1.1
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   jinja2
     #   nbconvert
 matplotlib==3.5.1
@@ -207,13 +218,13 @@ notebook-shim==0.1.0
     # via nbclassic
 numpy==1.21.6
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   itermplot
     #   matplotlib
     #   scipy
 packaging==21.3
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   dparse
     #   ipykernel
     #   jupyter-server
@@ -231,18 +242,16 @@ pathspec==0.9.0
     # via black
 pbr==5.8.1
     # via stevedore
-pexpect==4.8.0
-    # via ipython
 pickleshare==0.7.5
     # via ipython
 pillow==9.1.0
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   -r requirements/dev.in
     #   matplotlib
 platformdirs==2.5.2
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   black
     #   pylint
 pluggy==1.0.0
@@ -255,12 +264,8 @@ prompt-toolkit==3.0.29
     # via ipython
 psutil==5.9.0
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   ipykernel
-ptyprocess==0.7.0
-    # via
-    #   pexpect
-    #   terminado
 py==1.11.0
     # via pytest
 pycodestyle==2.8.0
@@ -277,27 +282,33 @@ pylint==2.13.5
     # via -r requirements/dev.in
 pyparsing==3.0.8
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   matplotlib
     #   packaging
 pyrsistent==0.18.1
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   jsonschema
 pytest==7.1.1
     # via -r requirements/dev.in
 python-dateutil==2.8.2
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   jupyter-client
     #   matplotlib
 pytz==2022.1
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   babel
+pywin32==304
+    # via jupyter-core
+pywinpty==2.0.5
+    # via
+    #   jupyter-server
+    #   terminado
 pyyaml==6.0
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   -r requirements/dev.in
     #   bandit
     #   dparse
@@ -310,7 +321,7 @@ regex==2022.3.15
     # via nltk
 requests==2.27.1
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   jupyterlab-server
     #   safety
 safety==1.10.3
@@ -323,7 +334,7 @@ send2trash==1.8.0
     #   notebook
 six==1.16.0
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   bleach
     #   itermplot
     #   python-dateutil
@@ -345,7 +356,7 @@ tinycss2==1.1.1
     # via nbconvert
 toml==0.10.2
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   dparse
 tomli==2.0.1
     # via
@@ -355,7 +366,7 @@ tomli==2.0.1
     #   pytest
 tornado==6.1
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   -r requirements/dev.in
     #   ipykernel
     #   jupyter-client
@@ -365,7 +376,7 @@ tornado==6.1
     #   terminado
 tqdm==4.64.0
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   nltk
 traitlets==5.1.1
     # via
@@ -386,7 +397,7 @@ typed-ast==1.5.3
     #   mypy
 typing-extensions==4.2.0
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   anyio
     #   argon2-cffi
     #   astroid
@@ -399,7 +410,7 @@ typing-extensions==4.2.0
     #   pylint
 urllib3==1.26.9
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   requests
 wcwidth==0.2.5
     # via prompt-toolkit
@@ -409,13 +420,15 @@ webencodings==0.5.1
     #   tinycss2
 websocket-client==1.3.2
     # via jupyter-server
+wincertstore==0.2
+    # via -r requirements/dev.in
 wrapt==1.14.0
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   astroid
 zipp==3.8.0
     # via
-    #   -c requirements/prod.txt
+    #   -c requirements\prod.txt
     #   importlib-metadata
     #   importlib-resources
 
